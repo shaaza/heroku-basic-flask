@@ -18,19 +18,19 @@ def sql():
     return redirect("https://medium.com/@shaaz_a/how-to-choose-a-table-index-for-your-sql-database-d47715a35f34", code=302)
 
 @app.route('/programming-with-purity')
-def sql():
+def functional():
     return redirect("https://medium.com/@shaaz_a/methods-of-functional-programming-using-python-or-javascript-b3309bb2c807", code=302)
 
 @app.route('/architecting-a-text-adventure-game')
-def sql():
+def textgame():
     return redirect("https://medium.com/@shaaz_a/architecting-a-text-adventure-game-2e0dc4d49812", code=302)
 
 @app.route('/seeing-responsibilities')
-def sql():
+def responsibilities():
     return redirect("https://medium.com/@shaaz_a/latest", code=302)
 
 @app.route('/string-matching-indic-text')
-def sql():
+def indictext():
     return redirect("https://medium.com/@shaaz_a/latest", code=302)
 
 if __name__ == '__main__':
