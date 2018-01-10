@@ -31,7 +31,7 @@ def responsibilities():
 
 @app.route('/string-matching-indic-text')
 def indictext():
-    return redirect("https://medium.com/@shaaz_a/latest", code=302)
+    return redirect("github.com/nilenso/kosha/blob/scrape-test-data/doc/stitching.org", code=302)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
