@@ -27,7 +27,7 @@ def textgame():
 
 @app.route('/seeing-responsibilities')
 def responsibilities():
-    return redirect("https://medium.com/@shaaz_a/latest", code=302)
+    return redirect("https://medium.com/@shaaz_a/seeing-responsibilities-in-object-oriented-code-eca377a7e7e", code=302)
 
 @app.route('/string-matching-indic-text')
 def indictext():
