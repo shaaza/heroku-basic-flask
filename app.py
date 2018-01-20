@@ -33,5 +33,9 @@ def responsibilities():
 def indictext():
     return redirect("https://github.com/nilenso/kosha/blob/scrape-test-data/doc/stitching.org", code=302)
 
+@app.route('/writing-on-posture')
+def posture():
+    return '<html><body>Nothing here yet. Come back later.</body></html>'
+
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
