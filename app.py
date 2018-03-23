@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template
+from flask import Flask, redirect, render_template, send_from_directory
 from datetime import datetime
 app = Flask(__name__)
 
@@ -7,6 +7,10 @@ def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
 
     return render_template('template.html')
+
+@app.route('/fonts/<path:path>')
+def send_js(path):
+    return send_from_directory('fonts', path)
 
 @app.route('/optimizing-sql-queries')
 def sql():

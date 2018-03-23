@@ -3,21 +3,53 @@
     <title>Shaaz's Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="fonts/cmun-serif.css" rel="stylesheet">
     <style type="text/css">
       .container {
-        max-width: 500px;
+        max-width:   500px;
         padding-top: 100px;
+      }
+
+      #title {
+        font-family: "Computer Modern Serif";
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-family: "Computer Modern Serif";
+        font-size: 22px;
+        padding-left: 2%;
+      }
+
+      .links {
+        font-family: "Computer Modern Serif";
+        font-size: 20px;
+        padding-left: 7%;
+      }
+
+      .links .small {
+        font-size: 16px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h4>Shaaz Ahmed</h4>
+      <h4 id="title">Shaaz Ahmed</h4>
       <br />
-      <p><a href="https://medium.com/@shaaz_a/latest">Blog Posts on Medium</a></p>
-      <p><a href="https://github.com/shaaza">Github</a></p>
+      <p class="subtitle">Software</p>
+      <p class="links"><a href="https://github.com/shaaza">Github</a> <span class="small">open-source code</span></p>
+      <p class="links"><a href="https://medium.com/the-software-firehose">The Software Firehose</a> <span class="small">blog on software</span></p>
+      <br />
+      <p class="subtitle">Personal</p>
+      <p class="links"><a href="https://medium.com/hacking-learning">Hacking Learning</a> <span class="small">blog on education</span></p>
+      <p class="links"><a href="mailto:shaaz.ahmed@hotmail.com">Email</a> <span class="small">get in touch</a></p>
+      <br />
+      <p class="subtitle">Work</p>
+      <p class="links"><a href="https://www.linkedin.com/in/shaaza/">LinkedIn</a> <span class="small">professional history</span></p>
+      <p class="links"><a href="http://www.nilenso.com">Nilenso</a> <span class="small">current workplace, employee-owned cooperative</span></p>
     </div>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
   </body>
 </html>
