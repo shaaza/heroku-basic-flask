@@ -1,12 +1,19 @@
-from flask import Flask, redirect, render_template, send_from_directory
+from flask import Flask, redirect, render_template, send_from_directory, url_for
 from datetime import datetime
 app = Flask(__name__)
 
 @app.route('/')
+def index():
+    return redirect(url_for('homepage'))
+
+@app.route('/online')
 def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
+    return render_template('home.html')
 
-    return render_template('template.html')
+@app.route('/reading')
+def readlog():
+    return render_template('reading.html')
 
 @app.route('/fonts/<path:path>')
 def send_js(path):
