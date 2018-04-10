@@ -39,6 +39,10 @@ def responsibilities():
 def indictext():
     return redirect("https://github.com/nilenso/kosha/blob/scrape-test-data/doc/stitching.org", code=302)
 
+@app.route('/understanding-the-dh-protocol')
+def diffiehellman():
+    return redirect("https://medium.com/the-software-firehose/how-to-share-a-secret-key-part-1-7c3ea83ab3bb")
+
 @app.route('/writing-on-posture')
 def posture():
     return '<html><body>Nothing here yet. Come back later.</body></html>'
