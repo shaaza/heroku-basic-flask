@@ -47,13 +47,13 @@ def indictext():
 def diffiehellman():
     return redirect("https://medium.com/the-software-firehose/how-to-share-a-secret-key-part-1-7c3ea83ab3bb")
 
-@app.route('/css/<path:path>')
-def send_css(path):
-    return send_from_directory('css', path)
-
 @app.route('/notes/css/<path:path>')
-def send_notes(path):
+def send_css(path):
     return send_from_directory('templates/notes/css', path)
+
+@app.route('/notes/<path:path>')
+def send_notes(path):
+    return send_from_directory('templates/notes', path)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
