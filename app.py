@@ -51,9 +51,9 @@ def diffiehellman():
 def send_css(path):
     return send_from_directory('css', path)
 
-@app.route('/notes/<path:path>')
+@app.route('/notes/css/<path:path>')
 def send_notes(path):
-    return send_from_directory('templates/notes', path)
+    return send_from_directory('templates/notes/css', path)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
