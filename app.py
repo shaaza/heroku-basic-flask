@@ -53,7 +53,7 @@ def send_css(path):
 
 @app.route('/notes/<path:path>')
 def send_notes(path):
-    return send_from_directory('notes', path)
+    return send_from_directory('templates/notes', path)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
